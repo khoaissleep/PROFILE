@@ -7,48 +7,50 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
-<body class="bg-gradient-to-r from-blue-100 to-purple-200 text-gray-800">
-    <header class="text-center py-10">
-        <h1 class="text-5xl font-bold text-blue-800">Võ Đăng Khoa</h1>
-        <p class="text-2xl text-gray-600">Computer Engineering Student at UIT - VNUHCM</p>
+<body class="bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 text-gray-800 overflow-x-hidden">
+    <header class="text-center py-10 animate-pulse">
+        <h1 class="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">Võ Đăng Khoa</h1>
+        <p class="text-2xl text-gray-700">Computer Engineering Student at UIT - VNUHCM</p>
     </header>
 
     <main class="max-w-4xl mx-auto p-6 space-y-8">
-        <section class="bg-white shadow-lg rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300">
-            <h2 class="text-3xl font-semibold text-blue-700 mb-4">About Me</h2>
-            <p>Born in 2006, from Da Nang. Former student at Le Quy Don High School for the Gifted, specializing in Informatics.</p>
+        <section class="bg-white shadow-2xl rounded-3xl p-8 transform hover:scale-110 transition-transform duration-500 hover:rotate-3 hover:shadow-pink-500/50">
+            <h2 class="text-4xl font-bold text-pink-600 mb-4">About Me</h2>
+            <p class="text-lg">Born in 2006, from Da Nang. Former student at Le Quy Don High School for the Gifted, specializing in Informatics.</p>
         </section>
 
-        <section class="bg-white shadow-lg rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300">
-            <h2 class="text-3xl font-semibold text-blue-700 mb-4">Projects</h2>
-            <ul class="list-disc list-inside space-y-2">
+        <section class="bg-white shadow-2xl rounded-3xl p-8 transform hover:scale-110 transition-transform duration-500 hover:-rotate-3 hover:shadow-purple-500/50">
+            <h2 class="text-4xl font-bold text-purple-600 mb-4">Projects</h2>
+            <ul class="list-disc list-inside space-y-2 text-lg">
                 <li><strong>PREDICT_HOUSE_PRICE</strong>: A Machine Learning project predicting house prices using Python.</li>
                 <li><strong>ROBOT_ARM</strong>: Embedded system project controlling a robotic arm using C++.</li>
                 <li><strong>WEATHER_PREDICT</strong>: AI-based weather prediction implemented in Python.</li>
             </ul>
         </section>
 
-        <section class="bg-white shadow-lg rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300">
-            <h2 class="text-3xl font-semibold text-blue-700 mb-4">Contact & Links</h2>
-            <ul class="space-y-2">
-                <li><a href="https://github.com/khoaissleep" class="text-blue-600 hover:underline">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/v%C3%B5-%C4%91%C4%83ng-khoa-791a65337/" class="text-blue-600 hover:underline">LinkedIn</a></li>
+        <section class="bg-white shadow-2xl rounded-3xl p-8 transform hover:scale-110 transition-transform duration-500 hover:rotate-3 hover:shadow-blue-500/50">
+            <h2 class="text-4xl font-bold text-blue-600 mb-4">Contact & Links</h2>
+            <ul class="space-y-2 text-lg">
+                <li><a href="https://github.com/khoaissleep" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/v%C3%B5-%C4%91%C4%83ng-khoa-791a65337/" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">LinkedIn</a></li>
             </ul>
         </section>
 
-        <section class="bg-white shadow-lg rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300 text-center">
-            <h2 class="text-3xl font-semibold text-blue-700 mb-4">My Photo</h2>
-            <p>You can add your photo here:</p>
-            <div class="w-32 h-32 mx-auto bg-gray-300 rounded-full overflow-hidden shadow-md">
+        <section class="bg-white shadow-2xl rounded-3xl p-8 text-center transform hover:scale-110 transition-transform duration-500 hover:-rotate-3 hover:shadow-pink-500/50">
+            <h2 class="text-4xl font-bold text-pink-600 mb-4">My Photo</h2>
+            <div class="w-32 h-32 mx-auto bg-gray-300 rounded-full overflow-hidden shadow-lg animate-bounce">
                 <img src="photo.jpg" alt="Võ Đăng Khoa" class="object-cover w-full h-full">
             </div>
         </section>
     </main>
 
-    <footer class="bg-blue-800 text-white text-center py-4">
+    <footer class="bg-purple-600 text-white text-center py-4 animate-pulse">
         <p>&copy; 2025 Võ Đăng Khoa</p>
     </footer>
 
     <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_w51pcehl.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; position: fixed; bottom: 10px; right: 10px;" loop  autoplay></lottie-player>
+
+    <div class="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-purple-500 animate-[slide_3s_linear_infinite]"></div>
+    <style>@keyframes slide { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }</style>
 </body>
 </html>
