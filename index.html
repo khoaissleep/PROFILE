@@ -9,34 +9,54 @@
 </head>
 <body class="bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 text-gray-800 overflow-x-hidden">
     <header class="text-center py-10 animate-pulse">
-        <h1 class="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">Võ Đăng Khoa</h1>
-        <p class="text-2xl text-gray-700">Computer Engineering Student at UIT - VNUHCM</p>
+        <div class="flex justify-center items-center space-x-6">
+            <img src="photo.jpg" alt="Võ Đăng Khoa" class="w-32 h-32 rounded-full shadow-xl border-4 border-white">
+            <div>
+                <h1 class="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">Võ Đăng Khoa</h1>
+                <p class="text-2xl text-gray-700">Computer Engineering Student at UIT - VNUHCM</p>
+            </div>
+        </div>
     </header>
 
-    <nav class="text-center space-x-6 text-lg">
-        <a href="#contact" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">Contact</a>
-        <a href="#highschool" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">High School</a>
-        <a href="#university" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">University</a>
-    </nav>
-
     <main class="max-w-4xl mx-auto p-6 space-y-8">
-        <section id="contact" class="bg-white shadow-2xl rounded-3xl p-8 transform hover:scale-110 transition-transform duration-500 hover:rotate-3 hover:shadow-pink-500/50">
-            <h2 class="text-4xl font-bold text-pink-600 mb-4">Contact & Links</h2>
-            <ul class="space-y-2 text-lg">
+        <!-- Phần 1: Giới thiệu bản thân và thông tin liên lạc -->
+        <section id="about" class="bg-white shadow-2xl rounded-3xl p-8 transform hover:scale-110 transition-transform duration-500 hover:rotate-3 hover:shadow-pink-500/50">
+            <h2 class="text-4xl font-bold text-pink-600 mb-4">About Me</h2>
+            <p class="text-lg">Born in 2006, from Da Nang. Passionate about Computer Engineering and Technology.</p>
+            <ul class="space-y-2 text-lg mt-4">
                 <li>Facebook: <a href="https://www.facebook.com/angkhoavo.891515/" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">angkhoavo.891515</a></li>
                 <li>Email: <a href="mailto:24520848@gm.uit.edu.vn" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">24520848@gm.uit.edu.vn</a></li>
                 <li>Phone: <span class="text-pink-500">0935573431</span></li>
             </ul>
         </section>
 
+        <!-- Phần 2: Thời học sinh -->
         <section id="highschool" class="bg-white shadow-2xl rounded-3xl p-8 transform hover:scale-110 transition-transform duration-500 hover:-rotate-3 hover:shadow-purple-500/50">
             <h2 class="text-4xl font-bold text-purple-600 mb-4">High School</h2>
-            <p class="text-lg">Former student at Le Quy Don High School for the Gifted, specializing in Informatics.</p>
+            <p class="text-lg">Le Quy Don High School for the Gifted - Informatics Major</p>
+            <ul class="list-disc list-inside mt-4 text-lg">
+                <li>Second Prize in City-wide Informatics Contest (Grade 9 & 12)</li>
+                <li>Second Prize in Central Highlands Informatics Olympiad</li>
+            </ul>
+            <img src="lequydon.jpg" alt="Le Quy Don High School" class="w-full mt-4 rounded-xl shadow-lg">
         </section>
 
+        <!-- Phần 3: Thời đại học -->
         <section id="university" class="bg-white shadow-2xl rounded-3xl p-8 transform hover:scale-110 transition-transform duration-500 hover:rotate-3 hover:shadow-blue-500/50">
             <h2 class="text-4xl font-bold text-blue-600 mb-4">University</h2>
-            <p class="text-lg">Computer Engineering Student at University of Information Technology - VNUHCM.</p>
+            <p class="text-lg">University of Information Technology - VNUHCM</p>
+            <ul class="list-disc list-inside mt-4 text-lg">
+                <li>Computer Engineering Major</li>
+                <li>Active Member of Robotics Club</li>
+                <li>GitHub Projects:
+                    <ul class="ml-6 list-disc">
+                        <li><strong>PREDICT_HOUSE_PRICE:</strong> AI Model predicting house prices.</li>
+                        <li><strong>ROBOT_ARM:</strong> Embedded project controlling a robotic arm.</li>
+                        <li><strong>WEATHER_PREDICT:</strong> AI for weather forecasting.</li>
+                    </ul>
+                </li>
+            </ul>
+            <img src="uit.jpg" alt="University of Information Technology" class="w-full mt-4 rounded-xl shadow-lg">
         </section>
     </main>
 
