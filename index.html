@@ -5,47 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Võ Đăng Khoa - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
-<body class="bg-gray-100 text-gray-800">
-    <header class="bg-blue-600 text-white p-6 text-center">
-        <h1 class="text-4xl font-bold">Võ Đăng Khoa</h1>
-        <p class="text-xl">Computer Engineering Student at UIT - VNUHCM</p>
+<body class="bg-gradient-to-r from-blue-100 to-purple-200 text-gray-800">
+    <header class="text-center py-10">
+        <h1 class="text-5xl font-bold text-blue-800">Võ Đăng Khoa</h1>
+        <p class="text-2xl text-gray-600">Computer Engineering Student at UIT - VNUHCM</p>
     </header>
 
-    <main class="max-w-4xl mx-auto p-6">
-        <section class="bg-white shadow-md rounded-xl p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+    <main class="max-w-4xl mx-auto p-6 space-y-8">
+        <section class="bg-white shadow-lg rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-4">About Me</h2>
             <p>Born in 2006, from Da Nang. Former student at Le Quy Don High School for the Gifted, specializing in Informatics.</p>
         </section>
 
-        <section class="bg-white shadow-md rounded-xl p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Projects</h2>
-            <ul class="list-disc list-inside">
+        <section class="bg-white shadow-lg rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-4">Projects</h2>
+            <ul class="list-disc list-inside space-y-2">
                 <li><strong>PREDICT_HOUSE_PRICE</strong>: A Machine Learning project predicting house prices using Python.</li>
                 <li><strong>ROBOT_ARM</strong>: Embedded system project controlling a robotic arm using C++.</li>
                 <li><strong>WEATHER_PREDICT</strong>: AI-based weather prediction implemented in Python.</li>
             </ul>
         </section>
 
-        <section class="bg-white shadow-md rounded-xl p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Contact & Links</h2>
-            <ul class="list-disc list-inside">
+        <section class="bg-white shadow-lg rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-4">Contact & Links</h2>
+            <ul class="space-y-2">
                 <li><a href="https://github.com/khoaissleep" class="text-blue-600 hover:underline">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/v%C3%B5-%C4%91%C4%83ng-khoa-791a65337/" class="text-blue-600 hover:underline">LinkedIn</a></li>
             </ul>
         </section>
 
-        <section class="bg-white shadow-md rounded-xl p-6">
-            <h2 class="text-2xl font-bold mb-4">My Photo</h2>
+        <section class="bg-white shadow-lg rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300 text-center">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-4">My Photo</h2>
             <p>You can add your photo here:</p>
-            <div class="w-32 h-32 bg-gray-300 rounded-full overflow-hidden">
-                <img src="PROFILE-1/photo.jpg" alt="Võ Đăng Khoa">
+            <div class="w-32 h-32 mx-auto bg-gray-300 rounded-full overflow-hidden shadow-md">
+                <img src="photo.jpg" alt="Võ Đăng Khoa" class="object-cover w-full h-full">
             </div>
         </section>
     </main>
 
-    <footer class="bg-blue-600 text-white text-center p-4">
+    <footer class="bg-blue-800 text-white text-center py-4">
         <p>&copy; 2025 Võ Đăng Khoa</p>
     </footer>
+
+    <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_w51pcehl.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; position: fixed; bottom: 10px; right: 10px;" loop  autoplay></lottie-player>
 </body>
 </html>
