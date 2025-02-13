@@ -6,98 +6,58 @@
     <title>Võ Đăng Khoa - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<style>
-/* High-tech Animation Effects */
-@keyframes glitch {
-  0% { transform: translate(0); opacity: 1; }
-  20% { transform: translate(-2px, -2px); opacity: 0.8; }
-  40% { transform: translate(2px, 2px); opacity: 1; }
-  60% { transform: translate(-1px, 1px); opacity: 0.9; }
-  80% { transform: translate(1px, -1px); opacity: 1; }
-  100% { transform: translate(0); opacity: 1; }
-}
-.glitch { animation: glitch 1s infinite; }
-</style>
+    <style>
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); opacity: 1; }
+            20% { transform: translate(-2px, -2px); opacity: 0.8; }
+            40% { transform: translate(2px, 2px); opacity: 1; }
+            60% { transform: translate(-1px, 1px); opacity: 0.9; }
+            80% { transform: translate(1px, -1px); opacity: 1; }
+        }
+        .glitch { animation: glitch 1s infinite; }
+        @keyframes slide {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+    </style>
 </head>
 <body class="bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 text-gray-800 overflow-x-hidden">
-    <header class="text-center py-10 animate-pulse">
-    <div class="flex justify-center items-center space-x-6">
-        <img src="photo.jpg" class="w-[30rem] h-[30rem] rounded-full shadow-2xl border-4 border-white hover:scale-110 transition-transform duration-500 mx-auto">
-        <div>
-            <h1 class="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 glitch">Võ Đăng Khoa</h1>
-            <p class="text-2xl text-gray-700 animate-pulse">Computer Engineering Student at UIT - VNUHCM</p>
-        </div>
-    </div>
-</header>
 
+    <!-- Header -->
+    <header class="text-center py-10 animate-pulse">
+        <div class="flex flex-col md:flex-row justify-center items-center space-x-6">
+            <img src="photo.jpg" alt="Profile" class="w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] rounded-full shadow-2xl border-4 border-white hover:scale-110 transition-transform duration-500">
+            <div>
+                <h1 class="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 glitch">Võ Đăng Khoa</h1>
+                <p class="text-2xl text-gray-700 animate-pulse">Computer Engineering Student at UIT - VNUHCM</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
     <main class="max-w-4xl mx-auto p-6 space-y-8">
-        <!-- Phần 1: Giới thiệu bản thân và thông tin liên lạc -->
-        <section id="about" class="relative overflow-hidden" class="bg-white shadow-2xl rounded-3xl p-8 transform hover:scale-110 transition-transform duration-500 hover:rotate-3 hover:shadow-pink-500/50">
+        <!-- About Me -->
+        <section id="about" class="bg-white shadow-2xl rounded-3xl p-8 hover:scale-105 transition-transform duration-500 hover:rotate-3 hover:shadow-pink-500/50 relative">
             <h2 class="text-4xl font-bold text-pink-600 mb-4">About Me</h2>
             <p class="text-lg">Born in 2006, from Da Nang. Passionate about Computer Engineering and Technology.</p>
             <ul class="space-y-2 text-lg mt-4">
                 <li>Facebook: <a href="https://www.facebook.com/angkhoavo.891515/" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">angkhoavo.891515</a></li>
                 <li>Email: <a href="mailto:24520848@gm.uit.edu.vn" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">24520848@gm.uit.edu.vn</a></li>
                 <li>Phone: <span class="text-pink-500">0935573431</span></li>
-                <li>GitHub: <a href="https://github.com/khoaissleep" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">https://github.com/khoaissleep</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/v%C3%B5-%C4%91%C4%83ng-khoa-791a65337/" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">https://www.linkedin.com/in/v%C3%B5-%C4%91%C4%83ng-khoa-791a65337/</a></li>
+                <li>GitHub: <a href="https://github.com/khoaissleep" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">khoaissleep</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/v%C3%B5-%C4%91%C4%83ng-khoa-791a65337/" class="text-pink-500 hover:text-purple-500 transition-colors duration-300">LinkedIn Profile</a></li>
             </ul>
-        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-purple-300 to-transparent opacity-30 animate-[slide_8s_linear_infinite]"></div>
-</section>
+        </section>
+    </main>
 
-        <!-- Phần 2: Thời học sinh -->
-        $1 <img src="THPT.jpg" class="w-[20rem] h-[20rem] rounded-xl shadow-2xl border-4 border-white hover:scale-105 transition-transform duration-500 mx-auto">
-</div>
-            <ul class="list-disc list-inside mt-4 text-xl text-gray-800 leading-relaxed">
-                <li>Second Prize in City-wide Informatics Contest (Grade 9 & 12)</li>
-                <li>Second Prize in Central Highlands Informatics Olympiad</li>
-            </ul>
-            
-        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-purple-300 to-transparent opacity-30 animate-[slide_8s_linear_infinite]"></div>
-</section>
-
-        <!-- Phần 3: Thời đại học -->
-        <section id="university" class="bg-white shadow-2xl rounded-3xl p-10 border-4 border-blue-600 transform hover:scale-125 transition-transform duration-700 hover:rotate-6 hover:shadow-blue-600/70 relative"> <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-purple-500 animate-[slide_3s_linear_infinite]"></div> class="bg-white shadow-2xl rounded-3xl p-10 border-4 border-blue-600 transform hover:scale-125 transition-transform duration-700 hover:rotate-6 hover:shadow-blue-600/70">
-    <h2 class="text-5xl font-extrabold text-blue-700 mb-6 underline decoration-pink-500">University Life</h2>
-    <div class="flex items-center space-x-4">
-        <img src="uit.jpg" class="w-[20rem] h-[20rem] rounded-xl shadow-2xl border-4 border-white hover:scale-105 transition-transform duration-500 mx-auto">
-        <p class="text-lg">University of Information Technology - VNUHCM</p>
-    </div>
-    <ul class="list-disc list-inside mt-4 text-lg">
-        <li class="font-semibold">Computer Engineering Major - Diving deep into hardware and software integration</li>
-        <li class="font-semibold text-pink-600 animate-pulse">Member of AI Club - Collaborating on cutting-edge AI projects</li>
-        <img src="AICLB.jpg" class="w-[8rem] h-[8rem] rounded-xl shadow-2xl hover:shadow-pink-500/50 transition-shadow duration-500 mx-auto">
-        
-                <li class="font-semibold">Predict House Price <img src="linear.jpg" class="w-[6rem] h-[6rem] rounded-xl shadow-2xl hover:shadow-pink-500/50 transition-shadow duration-500 mx-auto"><p class="text-md text-gray-700 font-semibold">Utilizes machine learning to estimate property prices based on various features.</p></li>
-                <li class="font-semibold">Weather Predict Project <img src="logistic.jpg" class="w-[6rem] h-[6rem] rounded-xl shadow-2xl hover:shadow-pink-500/50 transition-shadow duration-500 mx-auto"><p class="text-md text-gray-700 font-semibold">Predicts weather conditions using logistic regression models and historical data.</p></li>
-                <li class="font-semibold">Robot Arm Project <img src="Robot_arm.jpg" class="w-[6rem] h-[6rem] rounded-xl shadow-2xl hover:shadow-pink-500/50 transition-shadow duration-500 mx-auto"><p class="text-md text-gray-700 font-semibold">A robotic arm controlled via Arduino for automation tasks and precise movements.</p></li>
-                
-
-                </li>
-                
-
-                </li>
-                
-
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <ul class="list-disc list-inside mt-4 text-lg">
-        <li class="font-semibold">GitHub: <a href="https://github.com/khoaissleep" class="text-blue-600 hover:underline">https://github.com/khoaissleep</a></li>
-        <li class="font-semibold">LinkedIn: <a href="https://www.linkedin.com/in/v%C3%B5-%C4%91%C4%83ng-khoa-791a65337/" class="text-blue-600 hover:underline">https://www.linkedin.com/in/v%C3%B5-%C4%91%C4%83ng-khoa-791a65337/</a></li>
-    </ul>
-<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-purple-300 to-transparent opacity-30 animate-[slide_8s_linear_infinite]"></div>
-</section>
-</main>
-
+    <!-- Footer -->
     <footer class="bg-purple-600 text-white text-center py-4 animate-pulse">
         <p>&copy; 2025 Võ Đăng Khoa</p>
     </footer>
 
+    <!-- Lottie Animation -->
     <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_w51pcehl.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; position: fixed; bottom: 10px; right: 10px;" loop  autoplay></lottie-player>
 
     <div class="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-purple-500 animate-[slide_3s_linear_infinite]"></div>
-    <style>@keyframes slide { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }</style>
 </body>
 </html>
