@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<nav class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
-    <div class="max-w-4xl mx-auto flex justify-between items-center p-4">
-        <h1 class="text-2xl font-bold text-purple-600">Võ Đăng Khoa</h1>
-        <ul class="flex space-x-4">
-            <li><a href="#about" class="text-gray-600 hover:text-purple-600">About</a></li>
-            <li><a href="#projects" class="text-gray-600 hover:text-purple-600">Projects</a></li>
-            <li><a href="#skills" class="text-gray-600 hover:text-purple-600">Skills</a></li>
-            <li><a href="#contact" class="text-gray-600 hover:text-purple-600">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+
     
 <head>
     <meta charset="UTF-8">
@@ -102,22 +92,38 @@
                     <li class="font-semibold">Computer Engineering Major - Diving deep into hardware and software integration</li>
                     <li class="font-semibold text-pink-600 animate-pulse">Member of AI Club - Collaborating on cutting-edge AI projects</li>
                     <img src="AICLB.jpg" class="w-[6rem] h-[6rem] sm:w-[8rem] sm:h-[8rem] rounded-xl shadow-2xl hover:shadow-pink-500/50 transition-shadow duration-500 mx-auto">
-                    
-                    <li class="font-semibold">Predict House Price 
-                        <img src="linear.jpg" class="w-[6rem] h-[6rem] sm:w-[8rem] sm:h-[8rem] rounded-xl shadow-2xl hover:shadow-pink-500/50 transition-shadow duration-500 mx-auto">
-                        <p class="text-sm sm:text-md text-gray-700 font-semibold">Utilizes machine learning to estimate property prices based on various features.</p>
-                    </li>
-
-                    <li class="font-semibold">Weather Predict Project 
-                        <img src="logistic.jpg" class="w-[6rem] h-[6rem] sm:w-[8rem] sm:h-[8rem] rounded-xl shadow-2xl hover:shadow-pink-500/50 transition-shadow duration-500 mx-auto">
-                        <p class="text-sm sm:text-md text-gray-700 font-semibold">Predicts weather conditions using logistic regression models and historical data.</p>
-                    </li>
-
-                    <li class="font-semibold">Robot Arm Project 
-                        <img src="Robot_arm.jpg" class="w-[6rem] h-[6rem] sm:w-[8rem] sm:h-[8rem] rounded-xl shadow-2xl hover:shadow-pink-500/50 transition-shadow duration-500 mx-auto">
-                        <p class="text-sm sm:text-md text-gray-700 font-semibold">A robotic arm controlled via Arduino for automation tasks and precise movements.</p>
-                    </li>
                 </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white shadow-2xl rounded-3xl p-6 sm:p-10 border-4 border-green-600 transform hover:scale-105 transition-transform duration-700 hover:shadow-green-600/70">
+            <h2 class="text-3xl sm:text-4xl font-bold text-purple-600 mb-4 text-center">Featured Projects</h2>
+            <div class="space-y-8">
+
+                <!-- Project 1: Predict House Price -->
+                <div class="bg-gradient-to-r from-blue-400 to-green-400 text-white rounded-3xl p-4 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-2">Predict House Price</h3>
+                    <p class="text-md sm:text-lg mb-4">Utilizes machine learning to estimate property prices based on various features.</p>
+                    <img src="linear.jpg" class="w-[8rem] h-[8rem] sm:w-[10rem] sm:h-[10rem] rounded-xl shadow-md hover:shadow-lg transition-shadow duration-500 mx-auto mb-4">
+                    <a href="https://github.com/khoaissleep/PREDICT_HOUSE_PRICE" class="inline-block bg-white text-blue-600 hover:text-green-600 px-4 py-2 rounded-full shadow-md hover:shadow-xl transition-shadow duration-300">View on GitHub</a>
+                </div>
+
+                <!-- Project 2: Weather Predict Project -->
+                <div class="bg-gradient-to-r from-yellow-400 to-red-400 text-white rounded-3xl p-4 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-2">Weather Predict Project</h3>
+                    <p class="text-md sm:text-lg mb-4">Predicts weather conditions using logistic regression models and historical data.</p>
+                    <img src="logistic.jpg" class="w-[8rem] h-[8rem] sm:w-[10rem] sm:h-[10rem] rounded-xl shadow-md hover:shadow-lg transition-shadow duration-500 mx-auto mb-4">
+                    <a href="https://github.com/khoaissleep/WEATHER_PREDICT" class="inline-block bg-white text-yellow-600 hover:text-red-600 px-4 py-2 rounded-full shadow-md hover:shadow-xl transition-shadow duration-300">View on GitHub</a>
+                </div>
+
+                <!-- Project 3: Robot Arm Project -->
+                <div class="bg-gradient-to-r from-purple-400 to-pink-400 text-white rounded-3xl p-4 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-2">Robot Arm Project</h3>
+                    <p class="text-md sm:text-lg mb-4">A robotic arm controlled via Arduino for automation tasks and precise movements.</p>
+                    <img src="Robot_arm.jpg" class="w-[8rem] h-[8rem] sm:w-[10rem] sm:h-[10rem] rounded-xl shadow-md hover:shadow-lg transition-shadow duration-500 mx-auto mb-4">
+                    <a href="https://github.com/khoaissleep/ROBOT_ARM" class="inline-block bg-white text-purple-600 hover:text-pink-600 px-4 py-2 rounded-full shadow-md hover:shadow-xl transition-shadow duration-300">View on GitHub</a>
+                </div>
             </div>
         </section>
 
